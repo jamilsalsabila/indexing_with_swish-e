@@ -70,25 +70,26 @@ Langkah ketiga, ***INDEXING***:
     ![configure](./images/configure.png)
     ![configure](./images/configure2.png)
     * ```$ make```
-    ![make][build swish-e](images/make.png)
+    ![make](images/make.png)
     * ```$ make check``` *pastikan semua tes berhasil
-    ![make check][check if something out of the way](images/make_check.png)
+    ![make check](images/make_check.png)
     * ```$ sudo su```
     * ```$ make install```
-    ![make install][if nothing wrong, proceed to install](images/make_install.png)
+    ![make install](images/make_install.png)
     * ```$ exit```
-    * ```$ swish-e -V```
-    ![version][SWISH-E 2.5.8](images/version.png)
+    * ```$ swish-e -V``` 
+    SWISH-E 2.5.8
+    ![version](images/version.png)
 4. Membuat file config. : **[BACA LEBIH LANJUT](https://www.esa.org/tiee/search/html/swish-config.html)**
     * Versi tidak ada _stemming_
-        ![no stemm][no stem](images/config.png)
+        ![no stemm](images/config.png)
     * Versi ada _stemming_
-        ![no stemm][no stem](images/config2.png)
+        ![with stemm](images/config2.png)
 5. Proses Peng-indeks-an menggunakan file config yang telah dibuat 
     * no stem
-        ![no stemm][no stem](images/indeks_sebelum_stemming.png)
+        ![no stemm](images/indeks_sebelum_stemming.png)
     * with stem
-        ![no stemm][no stem](images/indeks_setelah_stemming.png)
+        ![with stemm](images/indeks_setelah_stemming.png)
 6. Dapat dilihat _file_ yang diindeks berjumlah 56295 _files_
 7. Waktu peng-indeks-an: ~10 menit
 8. Jumlah _Unique words_:
@@ -97,6 +98,6 @@ Langkah ketiga, ***INDEXING***:
 9. Terlihat perbedaan mencolok antara ***no stem*** dan ***with stem*** dalam hal jumlah _Unique words_
 10. Uji Coba _search_ sebuah kata:
     * no stem
-        ![no stemm][no stem](images/uji_coba_no_stem.png)
+        ![no stemm](images/uji_coba_no_stem.png)
     * with stem
-        ![no stemm][with stem](images/uji_coba_with_stem.png)
+        ![with stemm](images/uji_coba_with_stem.png)
