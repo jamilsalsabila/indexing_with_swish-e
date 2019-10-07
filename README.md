@@ -40,7 +40,7 @@ Mengubah kata ke bentuk dasarnya, contoh:
 2. Tujuan:  
     Sebisa mungkin mengurangi kata yang nantinya akan di-indeks, sehingga jumlah memori yang digunakan semakin sedikit
 3. Proses _STEMMING_ menggunakan pustaka/modul yang dikembangkan oleh [RadhiFadlillah](https://github.com/RadhiFadlillah/go-sastrawi) dalam bahasa [GO](https://golang.org/), dimana RadhiFadlillah mengambil referensi dari [andylibrian](https://github.com/sastrawi/sastrawi) yang mengembangkannya dalam bahasa PHP. 
-4. Pustaka  (kopi sebahagian dari [README.md RadhiFadlillah](https://github.com/RadhiFadlillah/go-sastrawi))  
+4. Pustaka  (kopi sebahagian dari [README.md RadhiFadlillah](github.com/RadhiFadlillah/go-sastrawi))  
     #### Algoritma
     1. Algoritma Nazief dan Adriani
     2. Asian J. 2007. ___Effective Techniques for Indonesian Text Retrieval___. PhD thesis School of Computer Science and Information Technology RMIT University Australia. ([PDF](http://researchbank.rmit.edu.au/eserv/rmit:6312/Asian.pdf) dan [Amazon](https://www.amazon.com/Effective-Techniques-Indonesian-Text-Retrieval/dp/3639021649))
@@ -101,3 +101,9 @@ Langkah ketiga, ***INDEXING***:
         ![no stemm](images/uji_coba_no_stem.png)
     * with stem
         ![with stemm](images/uji_coba_with_stem.png)
+11. Arti dari Output (format):
+    * Kolom-1: Ranking
+    * Kolom-2: Lokasi dokumen/_file_
+    * Kolom-3: Judul/Nama dokumen/_file_
+    * Kolom-4: _Size_/Ukuran dokumen (dalam _bytes_)
+    **[BACA LEBIH LANJUT](https://www.esa.org/tiee/search/html/swish-config.html)**
