@@ -67,8 +67,8 @@ Langkah ketiga, ***INDEXING***:
     * Unzip
     * ```$ cd```
     * ```$ ./configure```
-    ![configure][configuring swish-e](./images/configure.png)
-    ![configure][configuring swish-e](./images/configure2.png)
+    ![configure](./images/configure.png)
+    ![configure](./images/configure2.png)
     * ```$ make```
     ![make][build swish-e](images/make.png)
     * ```$ make check``` *pastikan semua tes berhasil
