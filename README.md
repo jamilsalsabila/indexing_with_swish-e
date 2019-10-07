@@ -61,7 +61,7 @@ Mengubah kata ke bentuk dasarnya, contoh:
 
 Langkah ketiga, ***INDEXING***:
 1. Menggunakan _tool_ _swish-e_ ([download](https://github.com/swish-e/swish-e))
-2. Di-_install_ pada OS Linux 14.04 LTS 64bit
+2. Di-_install_ pada OS Linux 16.04 LTS 64bit
 3. Proses instalasi dapat dibaca [disini](https://www.esa.org/tiee/search/html/install.html)
     * Download
     * Unzip
