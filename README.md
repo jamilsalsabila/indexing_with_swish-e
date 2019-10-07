@@ -107,3 +107,7 @@ Langkah ketiga, ***INDEXING***:
     * Kolom-3: Judul/Nama dokumen/_file_
     * Kolom-4: _Size_/Ukuran dokumen (dalam _bytes_)
     **[BACA LEBIH LANJUT](https://www.esa.org/tiee/search/html/swish-config.html)**
+
+## ---Download---
+Semua file yang digunakan dalam projek ini dapat di unduh pada link berikut
+    [UNDUH FILE](https://drive.google.com/open?id=1e0Qtx1KgmzGm3IJGxHW3qBkp9F3BToBb)
