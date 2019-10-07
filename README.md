@@ -90,11 +90,11 @@ Langkah ketiga, ***INDEXING***:
         ![no stemm](images/indeks_sebelum_stemming.png)
     * with stem
         ![with stemm](images/indeks_setelah_stemming.png)
-6. Dapat dilihat _file_ yang diindeks berjumlah 56295 _files_
-7. Waktu peng-indeks-an: ~10 menit
+6. Dapat dilihat _file_ yang diindeks berjumlah **56295** _files_
+7. Waktu peng-indeks-an: **~10 menit**
 8. Jumlah _Unique words_:
-    * no stem: ~186K
-    * with stem: ~162K
+    * no stem: **~186K**
+    * with stem: **~162K**
 9. Terlihat perbedaan mencolok antara ***no stem*** dan ***with stem*** dalam hal jumlah _Unique words_
 10. Uji Coba _search_ sebuah kata:
     * no stem
