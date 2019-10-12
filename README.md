@@ -1,6 +1,16 @@
 # INDEKS _FILE_ (**TEKS**) MENGGUNAKAN SWISH-E
 by: [M. SALSABILA JAMIL](mailto:jamilsalsabila@gmail.com)
 
+[SWISH-e](https://www.esa.org/tiee/search/html/index.html) adalah sebuah _tool_ yang digunakan untuk meng-indeks teks dalam berbagai format, seerti pdf, html, txt, xml, PostScript, dll. Selain meng-indeks, _tool_ ini juga dapat mencari dokumen berdasarkan _query_ yang kita _input_kan. _Tool_ ini banyak fitur/kemampuan yang dimilikinya, contohnya:
+   - Dapat menentukan _stopword list_ yang hendak digunakan
+   - Menentukan direktori (berisi file) yang ingin di-indeks 
+   - Menentukan jenis file yang di-indeks (PDF?, XML?, email?, txt?, html?, dll)
+   - Bisa melakukan _stemming_ (dalam beberapa bahasa)
+   - _Fast_
+   - Dapat meng-indeks berita dari suatu _website_ (_crawling_)
+   - Mencari dokumen yang mengandung _query_ yang dimasukkan
+   - dll.
+
 Langkah pertama yaitu ***DOWNLOAD FILE*** **BERISI TEKS** (disini penulis menggunakan TEKS BERITA)
 1. Penulis membuat skrip untuk mengunduh berita pada website:
     * [KOMPAS](https://www.kompas.com): ```src/spider/spider_kompas.go```
@@ -102,7 +112,8 @@ Langkah ketiga, ***INDEXING***:
         ![no stemm](images/uji_coba_no_stem.png)
     * with stem
         ![with stemm](images/uji_coba_with_stem.png)
-11. Arti dari Output (format):
+11. Jika ingin mencari dokumen dengan jumlah kata lebih dari satu, maka gunakan tanda petik dua ("[query]"), contohnya ```swish-e -f [file.index] -m 10 -w "jakarta bandung surabaya"```. _Query_ tersebut akan mencari dokumen yang mengandung kata **jakarta AND bandung AND surabaya**. Jika dalam _query_ tersebut ada kata yang terdapat dalam daftar _stopword_, maka akan dihapus/dilewatkan/tidak di proses.
+12. Arti dari Output (format):
     * Kolom-1: Ranking
     * Kolom-2: Lokasi dokumen/_file_
     * Kolom-3: Judul/Nama dokumen/_file_
