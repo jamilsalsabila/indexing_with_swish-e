@@ -1,5 +1,5 @@
 # INDEKS _FILE_ (**TEKS**) MENGGUNAKAN SWISH-E
-by: [M. SALSABILA JAMIL](mailto:jamilsalsabila@gmail.com)
+by: [M. SALSABILA JAMIL](https://github.com/jamilsalsabila)
 
 [SWISH-e](https://www.esa.org/tiee/search/html/index.html) adalah sebuah _tool_ yang digunakan untuk meng-indeks teks dalam berbagai format, seperti PDF, html, txt, XML, PostScript, dll. Selain meng-indeks, _tool_ ini juga dapat mencari dokumen berdasarkan _query_ yang di-_input_-kan. _Tool_ ini memiliki banyak fitur/kemampuan yang dimilikinya, contohnya:
    - Dapat menentukan _stopword list_ yang hendak digunakan
