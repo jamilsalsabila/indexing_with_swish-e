@@ -78,29 +78,29 @@ Langkah ketiga, ***INDEXING***:
     * Download
     * Unzip
     * ```$ cd```
-    * ```$ ./configure```
+    * ```$ ./configure```  
     ![configure](./images/configure2.png)
-    * ```$ make```
+    * ```$ make```  
     ![make](images/make.png)
-    * ```$ make check``` *pastikan semua tes berhasil
+    * ```$ make check``` *pastikan semua tes berhasil  
     ![make check](images/make_check.png)
     * ```$ sudo su```
-    * ```$ make install```
+    * ```$ make install```  
     ![make install](images/make_install.png)
     * ```$ exit```
     * ```$ swish-e -V```
-    SWISH-E 2.5.8
+    SWISH-E 2.5.8  
     ![version](images/version.png)
 4. Membuat file config. : **[BACA LEBIH LANJUT](https://www.esa.org/tiee/search/html/swish-config.html)**
-    * Versi tidak ada _stemming_
+    * Versi tidak ada _stemming_  
         ![no stemm](images/config.png)
-    * Versi ada _stemming_
+    * Versi ada _stemming_  
         ![with stemm](images/config2.png)
 5. Konfigurasi proses peng-indeks-an tercantum dalam _file_ config yang telah dibuat: ***swish.conf***.
    *Perlu diperhatikan adanya pemangkasan kata umum (_common words_)(_stopwords_) menggunakan data _stopwords_ bahasa indonesia (**stopwords_id.txt**) yang dapat di-_download_ melalui link [ini](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxrZXZpbmJvdWdlfGd4OjI4ZWY0ZGVkMzJjM2FkYWU). Data _Stopwords_ ini didapat pada _website_ [sites.google.com/site/kevinbouge/stopwords-lists](https://sites.google.com/site/kevinbouge/stopwords-lists).
-    * no stem
+    * no stem  
         ![no stemm](images/indeks_sebelum_stemming.png)
-    * with stem
+    * with stem  
         ![with stemm](images/indeks_setelah_stemming.png)
 6. Dapat dilihat _file_ yang diindeks berjumlah **56295** _files_
 7. Waktu peng-indeks-an: **~10 menit**
@@ -109,10 +109,11 @@ Langkah ketiga, ***INDEXING***:
     * with stem: **~162K**
 9. Terlihat perbedaan mencolok antara ***no stem*** dan ***with stem*** dalam hal jumlah _Unique words_
 10. Uji Coba _search_ sebuah kata:
-    * no stem
+    * no stem  
         ![no stemm](images/uji_coba_no_stem.png)
-    * with stem
+    * with stem  
         ![with stemm](images/uji_coba_with_stem.png)
+    * Perbedaanya tidak terlalu jauh dari hal jumlah dokumen yang berhasil ditemukan menggunakan kata tersebut.
 11. Jika ingin mencari dokumen dengan jumlah kata lebih dari satu, maka gunakan tanda petik dua ("[query]"), contohnya ```swish-e -f [index.swish-e] -m 10 -w "jakarta bandung surabaya"```. _Query_ tersebut akan mencari dokumen yang mengandung kata **jakarta AND bandung AND surabaya**. Jika dalam _query_ tersebut ada kata yang terdapat dalam daftar _stopword_, maka akan dihapus/dilewatkan/tidak di proses. Argument dari parameter ```-f``` adalah nama file hasil _indexing_ (_default_: ```index.swish-e```).
 12. Arti dari Output (format):
     * Kolom-1: Ranking
