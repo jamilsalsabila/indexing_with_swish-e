@@ -102,10 +102,20 @@ Langkah ketiga, **_INDEXING_**:
       ![with stemm](images/config2.png)
 5. Konfigurasi proses peng-indeks-an tercantum dalam _file_ config yang telah dibuat: **_swish.conf_**.
    \*Perlu diperhatikan adanya pemangkasan kata umum (_common words_)(_stopwords_) menggunakan data _stopwords_ bahasa indonesia (**stopwords_id.txt**) yang dapat di-_download_ melalui link [ini](https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxrZXZpbmJvdWdlfGd4OjI4ZWY0ZGVkMzJjM2FkYWU). Data _Stopwords_ ini didapat pada _website_ [sites.google.com/site/kevinbouge/stopwords-lists](https://sites.google.com/site/kevinbouge/stopwords-lists).
+   ```text
+   IndexFile ./indeks.swish-e
+   IndexDir ALL_2
+   IndexOnly .txt
+   IndexContents TXT* .txt
+   ParserWarnLevel 9
+   IndexReport 1
+   IgnoreWords File: ./stopwords_id.txt
+   ```
+   `swish.conf`
    - no stem  
-      ![no stemm](images/indeks_sebelum_stemming.png)
+      `IndexDir ALL`
    - with stem  
-      ![with stemm](images/indeks_setelah_stemming.png)
+      `IndexDir ALL_2`
 6. Dapat dilihat _file_ yang diindeks berjumlah **56295** _files_
 7. Waktu peng-indeks-an: **~10 menit**
 8. Jumlah _Unique words_:
@@ -151,3 +161,7 @@ Semua file yang digunakan dalam projek ini dapat di unduh pada link berikut
 ## github
 
 Versi enak dilihat -> [link](https://github.com/jamilsalsabila/indexing_with_swish-e/blob/master/README.md)
+
+## Data
+
+File konfigurasi dapat dilihat [di sini](https://github.com/jamilsalsabila/indexing_with_swish-e)
