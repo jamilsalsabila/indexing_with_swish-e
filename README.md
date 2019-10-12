@@ -79,7 +79,6 @@ Langkah ketiga, ***INDEXING***:
     * Unzip
     * ```$ cd```
     * ```$ ./configure```
-    ![configure](./images/configure.png)
     ![configure](./images/configure2.png)
     * ```$ make```
     ![make](images/make.png)
@@ -114,7 +113,7 @@ Langkah ketiga, ***INDEXING***:
         ![no stemm](images/uji_coba_no_stem.png)
     * with stem
         ![with stemm](images/uji_coba_with_stem.png)
-11. Jika ingin mencari dokumen dengan jumlah kata lebih dari satu, maka gunakan tanda petik dua ("[query]"), contohnya ```swish-e -f [file.index] -m 10 -w "jakarta bandung surabaya"```. _Query_ tersebut akan mencari dokumen yang mengandung kata **jakarta AND bandung AND surabaya**. Jika dalam _query_ tersebut ada kata yang terdapat dalam daftar _stopword_, maka akan dihapus/dilewatkan/tidak di proses.
+11. Jika ingin mencari dokumen dengan jumlah kata lebih dari satu, maka gunakan tanda petik dua ("[query]"), contohnya ```swish-e -f [index.swish-e] -m 10 -w "jakarta bandung surabaya"```. _Query_ tersebut akan mencari dokumen yang mengandung kata **jakarta AND bandung AND surabaya**. Jika dalam _query_ tersebut ada kata yang terdapat dalam daftar _stopword_, maka akan dihapus/dilewatkan/tidak di proses. Argument dari parameter ```-f``` adalah nama file hasil _indexing_ (_default_: ```index.swish-e```).
 12. Arti dari Output (format):
     * Kolom-1: Ranking
     * Kolom-2: Lokasi dokumen/_file_
