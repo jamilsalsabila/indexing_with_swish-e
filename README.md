@@ -64,7 +64,7 @@ Mengubah kata ke bentuk dasarnya, contoh:
     ## Lisensi
     Sebagaimana [Sastrawi](https://github.com/sastrawi/sastrawi) untuk PHP, [Go-Sastrawi](https://github.com/RadhiFadlillah/go-sastrawi) untuk GO, projek ini juga disebarkan dengan lisensi [MIT](http://choosealicense.com/licenses/mit/). Untuk lisensi kamus kata dasar dari Kateglo adalah [CC-BY-NC-SA 3.0](https://github.com/ivanlanin/kateglo#lisensi-isi).
 4.  Proses _STEMMING_ dilakukan menggunakan skrip yang terdapat di folder ```src/preprocess/stemming/main.go```
-5.  Cuplikan ketika proses _STEMMING_ berlangsung:
+5.  Cuplikan ketika proses _STEMMING_ berlangsung:  
     ![STEMMING](images/stemming.png)
 6.  Hasil _STEMMING_ ditaruh di folder:  
     - ```ALL_2/kompas```
