@@ -125,3 +125,6 @@ Langkah ketiga, ***INDEXING***:
 ## ---Download---
 Semua file yang digunakan dalam projek ini dapat di unduh pada link berikut
     [UNDUH FILE](https://drive.google.com/open?id=1e0Qtx1KgmzGm3IJGxHW3qBkp9F3BToBb)
+
+## github
+  Versi enak dilihat -> [link](https://github.com/jamilsalsabila/indexing_with_swish-e/blob/master/README.md)
