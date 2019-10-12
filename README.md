@@ -121,16 +121,20 @@ Langkah ketiga, **_INDEXING_**:
 11. Jika ingin mencari dokumen dengan jumlah kata lebih dari satu, maka gunakan tanda petik dua ("[query]"), contohnya `swish-e -f [index.swish-e] -m 10 -w "jakarta bandung surabaya"`. _Query_ tersebut akan mencari dokumen yang mengandung kata **jakarta AND bandung AND surabaya**. Jika dalam _query_ tersebut ada kata yang terdapat dalam daftar _stopword_, maka akan dihapus/dilewatkan/tidak di proses. Argument dari parameter `-f` adalah nama file hasil _indexing_ (_default_: `index.swish-e`).
 
     - _Query_: "**jakarta bandung surabaya**" atau **jakarta AND bandung AND surabaya**  
+      _Hit_: 390  
       ![jabasu](images/jamak2.png)
     - _Query_: "**pandji pragiwaksono dan raditya dika**"  
+      _Hit_: 8  
       ![pandjiradit](images/jamak4.png)  
       Dapat di-intepret sebagai: "_cari dokumen yang mengandung kata **pandji AND pragiwaksono AND dan AND raditya AND dika**_"  
       Kata '**dan**' tidak diproses karena termasuk dalam daftar _stopwords_
     - _Query_: "**raditya dika AND NOT pandji pragiwaksono**" dan "**raditya dika OR pandji pragiwaksono**"  
-      Dapat di-intepret sebagai:
+       _Hit_: 0 dan 71  
+       Dapat di-intepret sebagai:
       - "_cari dokumen yang mengandung kata **raditya AND dika tapi tidak ada kata pandji AND pragiwaksono**_"
       - "_cari dokumen yang mengandung kata **raditya AND dika atau pandji AND pragiwaksono**_"  
-        ![jamak6](images/jamak6.png)
+         ![jamak6](images/jamak6.png)  
+        Parameter `-m [n]` digunakan untuk menampilkan _top n_ dokumen, misalkan `-m 10` menampilkan 10 dokumen teratas.
 
 12. Arti dari Output (format):
     - Kolom-1: Ranking
