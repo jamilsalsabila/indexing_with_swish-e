@@ -111,7 +111,7 @@ Langkah ketiga, **_INDEXING_**:
    IndexReport 1
    IgnoreWords File: ./stopwords_id.txt
    ```
-   `swish.conf`
+   swish.conf
    - no stem  
       `IndexDir ALL`
    - with stem  
