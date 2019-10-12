@@ -3,13 +3,13 @@ by: [M. SALSABILA JAMIL](mailto:jamilsalsabila@gmail.com)
 
 [SWISH-e](https://www.esa.org/tiee/search/html/index.html) adalah sebuah _tool_ yang digunakan untuk meng-indeks teks dalam berbagai format, seperti PDF, html, txt, XML, PostScript, dll. Selain meng-indeks, _tool_ ini juga dapat mencari dokumen berdasarkan _query_ yang di-_input_-kan. _Tool_ ini memiliki banyak fitur/kemampuan yang dimilikinya, contohnya:
    - Dapat menentukan _stopword list_ yang hendak digunakan
-   - Menentukan direktori (berisi file) yang ingin di-indeks 
-   - Menentukan jenis file yang di-indeks (PDF?, XML?, email?, txt?, html?, dll)
+   - Dapat Menentukan direktori (berisi file) yang ingin di-indeks
+   - Dapat Menentukan jenis file yang di-indeks (PDF?, XML?, email?, txt?, html?, dll)
    - Bisa melakukan _stemming_ (dalam beberapa bahasa)
    - _Fast_
    - Dapat meng-indeks berita dari suatu _website_ (_crawling_)
-   - Mencari dokumen yang mengandung _query_ yang dimasukkan
-   - dll.
+   - Dapat Mencari dokumen yang mengandung _query_ yang dimasukkan
+   - Dan masih banyak lagi -> [Baca Lebih Lanjut](https://www.esa.org/tiee/search/html/readme.html)
 
 Berikut dijelaskan cara menggunakan _tool_ ini.
 
@@ -17,7 +17,7 @@ Langkah pertama yaitu ***DOWNLOAD FILE*** **BERISI TEKS** (disini penulis menggu
 1. Penulis membuat skrip untuk mengunduh berita pada website:
     * [KOMPAS](https://www.kompas.com): ```src/spider/spider_kompas.go```
     * [TEMPO](https://www.tempo.co): ```src/spider/spider_tempo.go```
-    * [ANTARA](https://www.antaranews.com): 
+    * [ANTARA](https://www.antaranews.com):
         - ```src/spider/spider_antara.go```
         - ```src/spider/spider_antara_oto.go```
 2. Tema-tema berita yang di-_download_:
@@ -44,14 +44,14 @@ Langkah pertama yaitu ***DOWNLOAD FILE*** **BERISI TEKS** (disini penulis menggu
         * Secara keseluruhan berjumlah: ***~55K***
 
 Langkah kedua, ***STEMMING***:  
-1. Pengertian: 
+1. Pengertian:
 Mengubah kata ke bentuk dasarnya, contoh:  
     * berjalan -> jalan
     * memancing -> pancing
     * menggunakan -> guna
 2. Tujuan:  
     Sebisa mungkin mengurangi kata yang nantinya akan di-indeks, sehingga jumlah memori yang digunakan semakin sedikit
-3. Proses _STEMMING_ menggunakan pustaka/modul yang dikembangkan oleh [RadhiFadlillah](https://github.com/RadhiFadlillah/go-sastrawi) dalam bahasa [GO](https://golang.org/), dimana RadhiFadlillah mengambil referensi dari [andylibrian](https://github.com/sastrawi/sastrawi) yang mengembangkannya dalam bahasa PHP. 
+3. Proses _STEMMING_ menggunakan pustaka/modul yang dikembangkan oleh [RadhiFadlillah](https://github.com/RadhiFadlillah/go-sastrawi) dalam bahasa [GO](https://golang.org/), dimana RadhiFadlillah mengambil referensi dari [andylibrian](https://github.com/sastrawi/sastrawi) yang mengembangkannya dalam bahasa PHP.
 4. Pustaka  (kopi sebahagian dari [README.md RadhiFadlillah](https://github.com/RadhiFadlillah/go-sastrawi))  
     #### Algoritma
     1. Algoritma Nazief dan Adriani
@@ -89,7 +89,7 @@ Langkah ketiga, ***INDEXING***:
     * ```$ make install```
     ![make install](images/make_install.png)
     * ```$ exit```
-    * ```$ swish-e -V``` 
+    * ```$ swish-e -V```
     SWISH-E 2.5.8
     ![version](images/version.png)
 4. Membuat file config. : **[BACA LEBIH LANJUT](https://www.esa.org/tiee/search/html/swish-config.html)**
