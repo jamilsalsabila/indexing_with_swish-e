@@ -11,6 +11,8 @@ by: [M. SALSABILA JAMIL](mailto:jamilsalsabila@gmail.com)
    - Mencari dokumen yang mengandung _query_ yang dimasukkan
    - dll.
 
+Berikut dijelaskan cara menggunakan _tool_ ini.
+
 Langkah pertama yaitu ***DOWNLOAD FILE*** **BERISI TEKS** (disini penulis menggunakan TEKS BERITA)
 1. Penulis membuat skrip untuk mengunduh berita pada website:
     * [KOMPAS](https://www.kompas.com): ```src/spider/spider_kompas.go```
