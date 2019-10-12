@@ -49,9 +49,10 @@ Langkah pertama yaitu **_DOWNLOAD FILE_** **BERISI TEKS** (disini penulis menggu
 Langkah kedua, **_STEMMING_**:
 
 1. Pengertian:
-   Mengubah kata ke bentuk dasarnya, contoh:  
-    _ berjalan -> jalan
-   _ memancing -> pancing \* menggunakan -> guna
+   Mengubah kata ke bentuk dasarnya, contoh:
+   - berjalan -> jalan
+   - memancing -> pancing
+   - menggunakan -> guna
 2. Tujuan:  
    Sebisa mungkin mengurangi kata yang nantinya akan di-indeks, sehingga jumlah memori yang digunakan semakin sedikit
 3. Proses _STEMMING_ menggunakan pustaka/modul yang dikembangkan oleh [RadhiFadlillah](https://github.com/RadhiFadlillah/go-sastrawi) dalam bahasa [GO](https://golang.org/), dimana RadhiFadlillah mengambil referensi dari [andylibrian](https://github.com/sastrawi/sastrawi) yang mengembangkannya dalam bahasa PHP.
