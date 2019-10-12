@@ -124,7 +124,13 @@ Langkah ketiga, **_INDEXING_**:
       ![jabasu](images/jamak2.png)
     - _Query_: "**pandji pragiwaksono dan raditya dika**"  
       ![pandjiradit](images/jamak4.png)  
-      Kata '**dan**' tidak diproses karena termasuk dalam daftar _stopwords_.
+      Dapat di-intepret sebagai: "_cari dokumen yang mengandung kata **pandji AND pragiwaksono AND dan AND raditya AND dika**_"  
+      Kata '**dan**' tidak diproses karena termasuk dalam daftar _stopwords_
+    - _Query_: "**raditya dika AND NOT pandji pragiwaksono**" dan "**raditya dika OR pandji pragiwaksono**"  
+      Dapat di-intepret sebagai:
+      - "_cari dokumen yang mengandung kata **raditya AND dika tapi tidak ada kata pandji AND pragiwaksono**_"
+      - "_cari dokumen yang mengandung kata **raditya AND dika atau pandji AND pragiwaksono**_"  
+        ![jamak6](images/jamak6.png)
 
 12. Arti dari Output (format):
     - Kolom-1: Ranking
