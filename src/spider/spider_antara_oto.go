@@ -63,12 +63,15 @@ func DownloadOto(workerId int8, targetNodes []*html.Node, fileOutput *os.File, d
 			panic(e)
 		}
 		defer fileOutput.Close()
+		
+		/* perlu try-catch */
 		linkNode = htmlquery.FindOne(div, `./h3/a`)
 		linkString = htmlquery.SelectAttr(linkNode, "href")
 		dateNode = htmlquery.FindOne(div, `./div`)
 
 		fmt.Fprintf(fileOutput, "link: %s\ntitle: %s\ndate: %s\n", linkString, strings.TrimSpace(InnerText(linkNode)), strings.TrimSpace(InnerText(dateNode)))
-
+		/* ---------------- */
+		
 		// download content
 		for {
 			content, e = http.Get(linkString)
