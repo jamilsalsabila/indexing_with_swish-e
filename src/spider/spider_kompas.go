@@ -47,13 +47,17 @@ func SpiderKompas(site string, page int, fileOutput *os.File, dir string) {
 		if e != nil {
 			panic(e)
 		}
+		defer fileOutput.Close()
+		
+		/* perlu try-catch */
 		linkNode = htmlquery.FindOne(targetNodes[i], `./div[@class="article__list__title"]/h3/a`)
 		linkString = htmlquery.SelectAttr(linkNode, "href")
 		tagNode = htmlquery.FindOne(targetNodes[i], `./div[@class="article__list__info"]/div[@class="article__subtitle article__subtitle--inline"]`)
 		dateNode = htmlquery.FindOne(targetNodes[i], `./div[@class="article__list__info"]/div[@class="article__date"]`)
 
 		fmt.Fprintf(fileOutput, "link: %s\ntitle: %s\ntag: %s\ndate: %s\n", linkString, linkNode.FirstChild.Data, tagNode.FirstChild.Data, dateNode.FirstChild.Data)
-
+		/* ---------------- */
+		
 		// download content
 		for {
 			content, e = http.Get(linkString)
