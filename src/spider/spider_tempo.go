@@ -57,13 +57,15 @@ func SpiderTempo(workerId int8, site string, day string, month string, year stri
 			panic(e)
 		}
 		defer fileOutput.Close()
+		
+		/* perlu try-catch */
 		linkNode = htmlquery.FindOne(div, `./a[2]`)
 		linkString = htmlquery.SelectAttr(linkNode, "href")
 		dateNode = htmlquery.FindOne(linkNode, `./span`)
 		titleString = htmlquery.FindOne(linkNode, `./h2`).FirstChild.Data
-
+		
 		fmt.Fprintf(fileOutput, "link: %s\ntitle: %s\ndate: %s\n", linkString, titleString, dateNode.FirstChild.Data)
-
+		/* ---------------- */
 		// download content
 		for {
 			content, e = http.Get(linkString)
