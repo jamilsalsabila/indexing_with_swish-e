@@ -94,7 +94,7 @@ func Download(workerId int8, targetNodes []*html.Node, fileOutput *os.File, dir 
 			panic(e)
 		}
 		defer fileOutput.Close()
-		
+
 		/* perlu try-catch */
 		linkNode = htmlquery.FindOne(header, `./h3/a`)
 		linkString = htmlquery.SelectAttr(linkNode, "href")
@@ -103,7 +103,7 @@ func Download(workerId int8, targetNodes []*html.Node, fileOutput *os.File, dir 
 
 		fmt.Fprintf(fileOutput, "link: %s\ntitle: %s\ntag: %s\ndate: %s\n", linkString, strings.TrimSpace(InnerTextKhususAntara(linkNode)), tagString, strings.TrimSpace(InnerTextKhususAntara(dateNode)))
 		/* ---------------- */
-		
+
 		// download content
 		for {
 			content, e = http.Get(linkString)
